@@ -231,7 +231,6 @@ const users = [
   },
 ];
 
-// Extract name, email, and address for each user
 const extractedData = users.map((user) => {
   return {
     name: user.name,
@@ -240,7 +239,6 @@ const extractedData = users.map((user) => {
   };
 });
 
-// Render user data to the grid
 const userGrid = document.getElementById("userGrid");
 extractedData.forEach((user) => {
   const userDiv = document.createElement("div");
